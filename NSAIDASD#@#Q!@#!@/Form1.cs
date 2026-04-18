@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace NSAIDASD___Q_____
 {
@@ -11,7 +10,10 @@ namespace NSAIDASD___Q_____
         List<string> Added = new List<string>();
         List<int> Addes = new List<int>();
 
-        public Form1() => InitializeComponent();
+        public Form1()
+        {
+            InitializeComponent();
+        }
 
         private void SetItem(string name, string price)
         {
@@ -20,12 +22,42 @@ namespace NSAIDASD___Q_____
             textBox3.Text = "1";
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e) => SetItem("6pc Burger Steak", "300");
-        private void pictureBox4_Click(object sender, EventArgs e) => SetItem("Yum Burger", "49");
-        private void pictureBox5_Click(object sender, EventArgs e) => SetItem("Jolly Spaghetti", "79");
-        private void pictureBox9_Click(object sender, EventArgs e) => SetItem("Coke Float", "59");
-        private void pictureBox8_Click(object sender, EventArgs e) => SetItem("Chicken Bucket", "499");
-        private void pictureBox7_Click(object sender, EventArgs e) => SetItem("Tunapie", "149");
+        private void pictureBox6_Click(object sender, EventArgs e)
+        { 
+
+            SetItem("6pc Burger Steak", "300"); 
+
+        }
+        private void pictureBox4_Click(object sender, EventArgs e)
+        { 
+            
+            SetItem("Yum Burger", "49"); 
+        
+        }
+        private void pictureBox5_Click(object sender, EventArgs e)
+        { 
+            
+            SetItem("Jolly Spaghetti", "79"); 
+        
+        }
+        private void pictureBox9_Click(object sender, EventArgs e)
+        { 
+            
+            SetItem("Coke Float", "59"); 
+        
+        }
+        private void pictureBox8_Click(object sender, EventArgs e)
+        { 
+            
+            SetItem("Chicken Bucket", "499"); 
+        
+        }
+        private void pictureBox7_Click(object sender, EventArgs e)
+        { 
+            
+            SetItem("Tunapie", "149"); 
+        
+        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -59,9 +91,20 @@ namespace NSAIDASD___Q_____
             Addes.Clear();
         }
 
-        private void button2_Click(object sender, EventArgs e) => this.Close();
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
-        public void textBox5_TextChanged(object sender, EventArgs e) { }
-        private void Form1_Load(object sender, EventArgs e) { }
+        public void textBox5_TextChanged(object sender, EventArgs e) 
+        {
+        
+        
+        }
+        private void Form1_Load(object sender, EventArgs e) 
+        {
+        
+        
+        }
     }
 }
